@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+
+$bg-color: #161122;
+$btn-color: lighten($bg-color, 8%);
+$top-btn-color: lighten($bg-color, 20%);
+$operation-btn-color: lighten($bg-color, 40%);
+
+body {
+  background-color: $bg-color;
+}
+
+.calculator-app {
+  font-family: 'Inter', sans-serif;
+  background-color: $bg-color;
+  padding: 1.5rem;
+  display: grid;
+  height: calc(100vh - 1.5rem * 2);
+  width: 450px;
+  margin: auto;
+  gap: 1.5rem;
+  align-content: start;
+  justify-content: end;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+
+  .output {
+    grid-column: 1 / -1;
+    color: white;
+    text-align: right;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: 200;
+    overflow: hidden;
+  }
+
+  button {
+    border: none;
+    background-color: $btn-color;
+    color: white;
+    font-size: 40px;
+    border-radius: 40px;
+
+    &:hover {
+      opacity: .8;
+      cursor: pointer;
+    }
+
+    &.top {
+      background-color: $top-btn-color;
+    }
+
+    &.operation {
+      background-color: $operation-btn-color;
+    }
+  }
+}
