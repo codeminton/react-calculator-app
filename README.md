@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Preview
+
+![Snake Game Preview](https://yt3.ggpht.com/i5sr0uDs8wA1H4waIJNvFPs5sd68Q9hqOMW77U27iKQ2z34yB_XPYw5jH-_si41_f9-Ta_w3N4kEww=s640-c-fcrop64=1,0ccd0000f332ffff-nd-v1 "React Calculator App Preview")
+
 ## Available Scripts
 
 In the project directory, you can run:
